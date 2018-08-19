@@ -50,11 +50,16 @@ function yarn(package, opts) {
 
 function main(argv) {
 
-  checkEngines(err => {
-    if (err) {
-      console.error(err);
+  checkEngines(
+    require(
+      './package.json'
+    ),
+    err => {
+      if (err) {
+        console.error(err);
+      }
     }
-  });  
+  );
 
   if (argv.length < 3) {
     console.error('Usage: install-reason-react-native <ProjectName in Pascal case>');
@@ -67,7 +72,7 @@ function main(argv) {
     process.cwd(),
     projectName
   );
-  
+
   sh(`react-native init ${projectName}`);
 
   process.chdir(
@@ -115,7 +120,7 @@ function main(argv) {
       )
     )
   );
-      
+
   fs.writeFileSync(
     path.join(
       projectPath,
