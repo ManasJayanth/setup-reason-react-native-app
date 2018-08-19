@@ -1,0 +1,17 @@
+{
+  "name": "create-reason-react-native-app",
+  "version": "0.0.0",
+  "description": "Bootstraps a Reason React Native app using React Native cli",
+  "main": "index.js",
+  "keywords": [
+    "ReasonML",
+    "React",
+    "Native",
+    "Bucklescript"
+  ],
+  "author": "Manas <prometheansacrifice@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "check-engines": "^1.5.0"
+  }
+}

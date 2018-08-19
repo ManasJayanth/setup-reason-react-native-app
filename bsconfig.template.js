@@ -1,0 +1,19 @@
+module.exports = name => ({
+  "name": name,
+  "bsc-flags": ["-bs-no-version-header", "-bs-super-errors"],
+  "refmt": 3,
+  "bs-dependencies": ["reason-react", "bs-react-native"],
+  "reason": {
+    "react-jsx": 2
+  },
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  },
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ]
+})
