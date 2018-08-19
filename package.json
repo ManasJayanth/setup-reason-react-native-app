@@ -1,5 +1,5 @@
 {
-  "name": "create-reason-react-native-app",
+  "name": "setup-reason-react-native-app",
   "version": "0.0.0",
   "description": "Bootstraps a Reason React Native app using React Native cli",
   "main": "index.js",
